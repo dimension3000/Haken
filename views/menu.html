@@ -1,0 +1,45 @@
+<script type="text/javascript">
+
+    function cambiarEstado(id,estado) {
+        var li = document.getElementById('li_'+id);
+        var a = document.getElementById('a_'+id);
+        if(estado) {
+
+            if(id=="inicio")
+                li.style.backgroundColor="#b6d109";
+            else if(id=="empresa")
+                li.style.backgroundColor="#5db555";
+            else if(id=="productos")
+                li.style.backgroundColor="#19a49b";
+            else if(id=="proyectos")
+                li.style.backgroundColor="#2eacdd";
+            else if(id=="distribuidores")
+                li.style.backgroundColor="#0b73b5";
+            else if(id=="contacto")
+                li.style.backgroundColor="#a1105a";
+
+            a.style.color = "white";
+            a.style.textShadow = "0.1em 0.1em #333";
+
+            return;
+        }
+        li.style.backgroundColor="white";
+        a.style.color = "black";
+        a.style.textShadow = "0.0em 0.0em #333";
+    }
+
+</script>
+
+<header>
+    <div id="menu">
+        <ul>
+            <li class="right_logo"><a href="index.php" class="logo">&nbsp;</a></li>
+            <li id="li_inicio" onMouseOver="cambiarEstado('inicio',true);" onMouseOut="cambiarEstado('inicio',false);"><a href="index.php" id="a_inicio">Inicio</a></li>
+            <li id="li_empresa" onMouseOver="cambiarEstado('empresa',true);" onMouseOut="cambiarEstado('empresa',false);"><a href="empresa.php" id="a_empresa">Empresa</a></li>
+            <li id="li_productos" onMouseOver="cambiarEstado('productos',true);" onMouseOut="cambiarEstado('productos',false);"><a href="productos.php" id="a_productos">Productos</a></li>
+            <li id="li_proyectos" onMouseOver="cambiarEstado('proyectos',true);" onMouseOut="cambiarEstado('proyectos',false);"><a href="proyectos.php" id="a_proyectos">Proyectos</a></li>
+            <li id="li_distribuidores" onMouseOver="cambiarEstado('distribuidores',true);" onMouseOut="cambiarEstado('distribuidores',false);"><a href="distribuidores.php" id="a_distribuidores">Distribuidores</a></li>
+            <li id="li_contacto" onMouseOver="cambiarEstado('contacto',true);" onMouseOut="cambiarEstado('contacto',false);"><a href="contacto.php" id="a_contacto">Contacto</a></li>
+        </ul>
+    </div>
+</header>

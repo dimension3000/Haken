@@ -1,0 +1,66 @@
+
+#testTable {
+    width : 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tablePagination {
+    background-color: #19A49B;
+    font-size: 16pt;
+    padding: 10px 10px;
+    height: auto;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+#tablePagination_paginater {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tablePagination img {
+    padding: 0px 2px;
+}
+
+#tablePagination_perPage {
+    float: left;
+    height: 20px;
+    font-family: BNeue;
+}
+
+#tablePagination_paginater {
+    float: right;
+}
+
+#tablePagination_currPage{
+    /*width: 10px;*/
+    height: 20px;
+    background-color: #19A49B;
+    font-family: BNeue;
+    font-size: 16pt;
+    color: #FFFFFF;
+}
+
+#tablePagination_rowsPerPage{
+    color: #FFFFFF;
+    background-color: #0B897D;
+    font-family: BNeue;
+    font-size: 16pt;
+    cursor: pointer;
+}
+
+#tablePagination_prevPage, #tablePagination_nextPage{
+    padding: 8px 8px;
+    margin: 0px 8px;
+}
+
+#tablePagination_prevPage:hover, #tablePagination_nextPage:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*
+#tablePagination_totalPages{
+
+}*/
